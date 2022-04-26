@@ -1,0 +1,157 @@
+/* ---------------------------
+# START CONFIGURATION
+------------------------------*/
+html, body {
+    height: 100%;
+    margin: 0;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/* ---------------------------
+# NAVBAR
+------------------------------*/
+#btn-nav {
+    width: 90px;
+    float: right;
+    margin-right: 25px;
+}
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+#footer, .push {
+    height: 50px;
+    font-size: 13px;
+}
+
+/* ---------------------------
+# LOGIN
+------------------------------*/
+#btn-enter {
+    width: 90px;
+}
+
+#heart {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+
+.icon-width {
+    width: 50px;
+}
+
+/* ---------------------------
+# BACKEND
+------------------------------*/
+.side-label {
+    width: 75px;
+}
+
+/* No data */
+#no-data {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 22px;
+}
+
+/* ---------------------------
+# CUSTOM SWEETALERT (blue theme)
+------------------------------*/ 
+/* All texts 100% centered */
+.swal-text {
+    text-align: center;
+}
+
+/* Icon settings */
+.swal-icon--success::before,
+.swal-icon--success::after,
+.swal-icon--success__hide_corners {
+    background: none;
+}
+
+.swal-icon--success {
+    /* Ring color */
+    border-color: #007bff;
+}
+
+.swal-icon--success__line {
+    /* Color animation */
+    border-color: #007bff;
+}
+
+/* button settings */
+.swal-button {
+    padding: 7px 19px;
+    border-radius: 5px;
+    background-color: #007bff;
+    font-size: 12px;
+    border: 1px solid #007bff;
+}
+
+.swal-button:focus {
+    /* remove the silver border of button */
+    box-shadow: none;
+}
+
+.swal-button:not([disabled]):hover {
+    background: transparent;
+    color: #111;
+    border: 1px solid #007bff;
+}
+
+/* -------------------------------------------
+# RESPONSIVE - RESOLUTION FOR TABLET (1024px)
+---------------------------------------------*/ 
+@media(max-width: 1024px) {
+    /* table */
+    .table thead {
+        display: none;
+    }
+
+    .table, .table tbody, .table tr, .table td {
+        display: block;
+        width: 100%;
+    }
+
+    .table tr {
+        margin-bottom: 15px;
+        border: 1px solid #111;
+        border-radius: 5px;
+    }
+
+    .table td {
+        text-align: right;
+        padding-left: 35%;
+        position: relative;
+        border: 1px solid transparent;
+    }
+
+    .table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .table > thead > tr:first-child {
+        display: none;
+        margin-top: 5px;
+    }
+
+    #responsive-border {
+        border: 1px solid #a9a9a9;
+    }
+}
