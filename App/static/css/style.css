@@ -150,8 +150,71 @@ html, body {
         display: none;
         margin-top: 5px;
     }
-
+    /* Border in td */
     #responsive-border {
         border: 1px solid #a9a9a9;
     }
+    /* Background color in td */
+    #top-table {
+        background-color: #cfe2ff;
+        color: #111;
+        font-weight: bold;
+    }
+    /* Enable scrolling page on responsive */
+    body {
+        overflow-y: visible;
+    }
+
+    #btn-nav {
+        width: 75px;
+    }
+
+    #footer {
+        font-size: 12px;
+    }
+}
+
+/* -------------------------------------------
+# RESPONSIVE - RESOLUTION FOR TABLET (500px)
+---------------------------------------------*/ 
+@media(max-width: 1024px) {
+    /* Hide this <span> in this mode */
+    #all-rights {
+        display: none;
+    }
+
+    #btn-nav {
+        width: 65px;
+        font-size: 12px;
+        margin-right: 15px;
+    }
+
+    #nav-content {
+        font-size: 15px;
+        margin-left: 15px;
+    }
+
+    #heart {
+    font-size: 12px;
+    }
+
+    #btn-enter {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .txt-sm {
+        font-size: 12px;
+    }
+
+    /* Time hidden in this mode */
+    #clock {
+        display: none;
+    }
+
+    .btn-action {
+        width: 35px;
+        font-size: 12px;
+    }
+
 }

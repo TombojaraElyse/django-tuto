@@ -24,12 +24,12 @@
             <form method="POST" autocomplete="off" novalidate>
                 {% csrf_token %}
                 <div class="input-group mb-3 mt-5">
-                    <span class="btn btn-secondary input-group-text icon-width"><i class="fas fa-user-alt"></i></span>
-                    <input type="text" class="form-control" name="username" placeholder="Username">
+                    <span class="btn btn-secondary input-group-text icon-width txt-sm"><i class="fas fa-user-alt"></i></span>
+                    <input type="text" class="form-control txt-sm" name="username" placeholder="Username">
                 </div>
                 <div class="input-group mb-3">
-                    <span class="btn btn-secondary input-group-text icon-width"><i class="fas fa-lock"></i></span>
-                    <input type="password" class="form-control" name="password" placeholder="Password">
+                    <span class="btn btn-secondary input-group-text icon-width txt-sm"><i class="fas fa-lock"></i></span>
+                    <input type="password" class="form-control txt-sm" name="password" placeholder="Password">
                 </div>
                 <input id="btn-enter" class="btn btn-primary btn-sm mt-4 mb-3" type="submit" value="Enter" />
             </form>
